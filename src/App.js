@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Timer from './Timer/Timer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className='container'>
+      <div className='content'>
+        <h2 className='heading'>Sandhya & Valesh</h2>
+        <p className='subheading'>
+          Wedding Date: Feb 11<sup>th</sup>, 2023 - 9:13PM
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Timer />
+      </div>
     </div>
   );
 }
