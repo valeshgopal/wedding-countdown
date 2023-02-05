@@ -3,7 +3,9 @@ import React from 'react';
 import Countdown from 'react-countdown';
 
 const Timer = () => {
-  const Completionist = () => <span>Congratulations!</span>;
+  const Completionist = () => (
+    <span className={styles.finalMessage}>Congratulations! 🥳</span>
+  );
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
